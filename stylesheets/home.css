@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    width: 310px;
+    height: 525px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1rem;
+    border-radius: 0.7em;
+    box-shadow: 0 0 15px 0.7em hsl(216, 50%, 10%);
+}
+
+.container {
+    border-radius: 0.7em;
+    margin-top: 0.5em;
+}
+
+.nft-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 0.7em;
+}
+
+.view-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 0.7em;
+    opacity: 0;
+    position: absolute;
+    top: 39.2%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,255,246, 0.55);
+}
+
+.container:hover .view-container {
+    cursor: pointer;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+
+#view-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.nft-name {
+    width: 100%;
+    margin: 1em 0 1em 0.8em;
+    font-size: 22px;
+}
+
+.nft-summary {
+    margin: 0 0 1em 0.5em;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.nft-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    font-size: 14px;
+}
+
+.nft-price {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+}
+
+.time-left {
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    margin-right: 0.4em;
+}
+
+.line {
+    margin: 1em 0 0.2em 0;
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+    width: 95%;
+}
+
+.creator {
+    display: flex;
+    margin-top: 0.5em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 35px;
+    width: 95%;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.avatar {
+    max-width: 30px;
+    max-height: 30px;
+    border: 0.5px solid white;
+    border-radius: 50%;
+    margin-right: 0.7em;
+}
+
+.creator-name {
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
