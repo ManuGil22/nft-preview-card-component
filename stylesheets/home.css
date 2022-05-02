@@ -25,27 +25,22 @@ body {
 
 .container {
     border-radius: 0.7em;
-    margin-top: 0.5em;
-}
-
-.nft-image {
-    width: 300px;
+    background-image: url("../images/image-equilibrium.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 300px;
-    border-radius: 0.7em;
+    width: 300px;
 }
 
 .view-container {
     width: 300px;
     height: 300px;
-    border-radius: 0.7em;
-    opacity: 0;
-    position: absolute;
-    top: 38.1%;
-    left: 50%;
+    border-radius: inherit;
+    opacity: 0; 
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(-50%, -50%);
     background-color: rgba(0,255,246, 0.55);
 }
 
